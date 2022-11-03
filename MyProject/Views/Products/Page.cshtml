@@ -1,0 +1,10 @@
+﻿<h3>@Model.currentTypeLoccation</h3>
+<div class="row mt-5 mb-2">
+   
+    @{
+        foreach (Products product in Model.getProducts)
+        {
+            @Html.Partial("GetProducts", product);
+        }
+}      
+ </div>    

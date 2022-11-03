@@ -1,0 +1,17 @@
+﻿@model ProductsBasketViewModel
+
+ <div style="display:block; margin-left:350px; margin-right:350px">
+
+    @foreach (var item in Model.productsBasket.list)
+    {
+        <div class="alert alert-warning mt-3">
+            <b>Продукт:</b> @item.Product.Name <br />
+            <b>Стоимость:</b> @item.Product.Cost.ToString("c")
+        </div>
+        <p><a class="btn btn-warning" asp-controller="ProductsBasket" asp-action="RedirectToNewBasket" asp-route-productId="@item.ID">Удалить</a></p>
+    }
+    
+    <hr/>
+    <a class="btn btn-danger" asp-controller="UserAcc" asp-action="LogIn">Оплатить</a>
+    <a class="btn btn-danger" asp-controller="Order">Купленные товары</a>
+    </div>

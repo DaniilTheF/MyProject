@@ -1,0 +1,24 @@
+﻿@model UserAcc
+<div class="row">
+    <h3> Вход </h3>
+        <form asp-controller="UserAcc" asp-action="LogIn" method="post" class="form-horizontal">
+            <div class="Form-group">
+                <label asp-for="Loggin"></label>
+                <div>
+                    <input asp-for="Loggin"  class="form-control"/>
+                    <span asp-validation-for="Loggin" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label asp-for="Password"></label>
+                <div>
+                    <input asp-for="Password" class="form-control"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            </br>
+            <input class="btn btn-success" type="submit" value="Зарегистрироваться"/>
+        </form>
+ 
+</div>
+

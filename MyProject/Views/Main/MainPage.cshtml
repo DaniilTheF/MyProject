@@ -1,0 +1,12 @@
+﻿@model MainViewModel
+
+<div class="row mt-5 mb-2">
+   
+    @{
+        foreach (Products product in Model.Products)
+        {
+            @Html.Partial("AllProducts", product);
+        }
+}
+<hr/>
+ </div>

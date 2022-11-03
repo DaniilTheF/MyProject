@@ -1,0 +1,45 @@
+﻿@model User
+<div class="row">
+    <h3> Регистрация </h3>
+        <form asp-controller="User" asp-action="SignUp" method="post" class="form-horizontal">
+            <div class="Form-group">
+                <label asp-for="FIO"></label>
+                <div>
+                    <input asp-for="FIO" class="form-control"/>
+                    <span asp-validation-for="FIO" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label asp-for="phoneN"></label>
+                <div>
+                    <input asp-for="phoneN" class="form-control"/>
+                    <span asp-validation-for="phoneN" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label asp-for="adress"></label>
+                <div>
+                    <input asp-for="adress" class="form-control"/>
+                    <span asp-validation-for="adress" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label asp-for="login"></label>
+                <div>
+                    <input asp-for="login"  class="form-control"/>
+                    <span asp-validation-for="login" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="Form-group">
+                <label asp-for="password"></label>
+                <div>
+                    <input asp-for="password" class="form-control"/>
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+            </div>
+            </br>
+            <input class="btn btn-success" type="submit" value="Зарегистрироваться"/>
+        </form>
+ 
+</div>
+

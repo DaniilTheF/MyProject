@@ -1,0 +1,8 @@
+﻿@model MyProject.Objects.Models.Products
+
+ <div class="col-lg-5">
+       <h3> @Model.Types.TypesName</h3>
+        <img class="img-thumbnail" style="width: 300px; height:200px" src="@Model.IMG" alt="@Model.Name"/>
+        <h5> @Model.Types.Descrip</h5>
+        <p><a class="btn btn-warning" href="/Products/Page/@Model.Types.TypesName">Перейти</a></p>
+</div>
